@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>TFT - Items</title>
 </head>
-<body>
+<body class="bg-dark">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">TFT Assist</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,7 +19,7 @@
               <a class="nav-link" href="meta.html">Meta<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="teamBuilder.html">Team Builder</a>
+              <a class="nav-link" href="summoner.html">Summoners</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="items.html">Items</a>
@@ -31,6 +31,154 @@
           </form>
         </div>
     </nav>
+
+    <div class="jumbotron jumbotron-fluid bg-dark text-white">
+      <div class="container">
+        <h1 class="display-4">Take a look at the complete list of items!</h1>
+        <p class="lead">Learn about the different items, and how they're built.</p>
+      </div>
+    </div>
+    <!-- Here are three lists. One will show the base items (as images, for now the word "Item" will act as a placeholder.)
+       The number of spaces has already been counted out to make sure there will be enough for all the items in the game.-->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="row">
+            <div class="col">
+              <table class="table table-dark table-borderless table-hover text-white">
+                <thead>
+                  <tr>
+                    <!--This will show base items and hopefully once and item is clicked another list will be displayed, 
+                      showing what it can built into. This will probably be done with hide and display.-->
+                    <th scope="col" colspan="5">Base Items</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                  </tr>
+                  <tr>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <table class="table table-dark table-borderless table-hover text-white">
+              <thead>
+                <tr>
+                  <!--When one of these items is clicked it should show a descriptiion to the right, once again using hide and display.
+                  but there might also hopefully be a little popover or tooltip that will show the name of the item?-->
+                  <th scope="col" colspan="5">Combined Items</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                </tr>
+                <tr>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                </tr>
+                <tr>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                </tr>
+                <tr>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                </tr>
+                <tr>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                </tr>
+                <tr>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                </tr>
+                <tr>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                </tr>
+                <tr>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+              <div class="col">
+                <table class="table table-dark table-borderless table-hover text-white">
+                  <thead>
+                    <tr>
+                      <!--This part will be changed with every click the user makes, showing and hiding different losts and decriptions,
+                      depending on what the user clicks.-->
+                      <th scope="col" colspan="4">Item descriptions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Item</th>
+                      <td colspan="3">Item Description</td>
+                    </tr>
+                    <tr>
+                        <th>Item</th>
+                        <td colspan="3">Item Description</td>
+                    </tr>
+                    <tr>
+                      <th>Item</th>
+                      <td colspan="3">Item Description</td>
+                    </tr>
+                    <tr>
+                      <th>Item</th>
+                      <td colspan="3">Item Description</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
