@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TFTAssist - Home</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TFT API - Summoner</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
-<body class="container-fluid justify-content-md-center bg-dark">
+
+<body class="container-fluid bg-dark justify-content-md-center">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-info">
         <a class="navbar-brand" href="index.html">TFT Assist</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,7 +20,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="meta.html">Meta<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="summoner.html">Summoner</a>
             </li>
             <li class="nav-item">
@@ -32,51 +34,56 @@
         </div>
     </nav>
 
-    <div class="jumbotron text-center bg-primary">
-        <h1 class="display-3">Welcome to TFT Assist</h1>
-        <p class="lead">Teambuild, play around meta, and find which items work best for your team comp</p>
+    <div class="card text-center bg-secondary">
+            <div class="card-header">
+              Search for your match history
+            </div>
+            <div class="card-body">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search Summoners">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </div>
+    </div>
+    <div class="card bg-transparent">
+            <div class="card-body"></div>
+    </div>
+    <div class="row justify-content-md-center">
+        <div>
+            <table class="table table-dark table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Placement</th>
+                    <th scope="col">Rank</th>
+                    <th scope="col">Roster</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td class="px-lg-5">5th</td>
+                    <td class="px-lg-5">Unrated</td>
+                    <td class="px-lg-5">Elderwood Mages</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td class="px-lg-5">8th</td>
+                    <td class="px-lg-5">Unrated</td>
+                    <td class="px-lg-5">Cultist Mages</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td class="px-lg-5">1st</td>
+                    <td class="px-lg-5">Unrated</td>
+                    <td class="px-lg-5">Cultist Assassins</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
     </div>
 
-    <div class="row container-fluid">
-        <div class="jumbotron bg-info col-lg-7">
-            <h1 class="display-5">Discover the Meta</h1>
-            <p class="lead">Stay up to date on what's finding other players success for each recent patch of TFT</p>
-            <hr class="my-4">
-            <p>Most recent update: <b>Patch 10.19</b> <i>Set 4 - Fates</i></p>
-            <a class="btn btn-primary btn-lg" href="meta.html" role="button">Go to meta</a>
-        </div>
-        <div class="col-lg-4">
-            <img class="img-fluid" src="set4.png">
-        </div>
-    </div>
-
-    <div class="row container-fluid">
-        <div class="col-lg-5">
-            <img class="img-fluid "src="pyke.jpg">
-        </div>
-        <div class="col-lg-7 jumbotron bg-danger text-right ">
-            <h1 class="display-5">Wanna see how you've done?</h1>
-            <p class="lead">Look up your summoner name to see your stats</p>
-            <hr class="my-4">
-            <p>Show off how well you've played</p>
-            <a class="btn btn-primary btn-lg" href="summoner.html" role="button">Go to Summoners</a>
-        </div>
-    </div>
-
-    <div class="row container-fluid">
-        <div class="jumbotron bg-success col-lg-7">
-            <h1 class="display-5">Buff up your Units</h1>
-            <p class="lead">Need to know what items do what or how build into another?</p>
-            <hr class="my-4">
-            <p>Figure out how to make the most out of your item choices</p>
-            <a class="btn btn-primary btn-lg" href="items.html" role="button">Go to items</a>
-        </div>
-        <div class="col-lg-4">
-            <img class="img-fluid" src="items.jpg">
-        </div>
-    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
 </body>
 </html>
