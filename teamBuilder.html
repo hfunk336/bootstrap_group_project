@@ -6,8 +6,8 @@
     <title>TFT API - Team Builder</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
-<body class="bg-dark">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body class="container-fluid bg-dark justify-content-md-center">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-info">
         <a class="navbar-brand" href="index.html">TFT Assist</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -18,11 +18,14 @@
             <li class="nav-item">
                 <a class="nav-link" href="meta.html">Meta<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="teamBuilder.html">Team Builder</a>
+            <li class="nav-item">
+                <a class="nav-link" href="summoner.html">Summoner</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="items.html">Items</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="teamBuilder.html">Team Builder</a>
             </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -30,11 +33,15 @@
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
+        <!-- creates a nav to all pages and a search bar to look for a specific summoner -->
     </nav>
 
-    <div class="card bg-transparent">
-            <div class="card-body"></div>
-    </div>
+    <div class="jumbotron jumbotron-fluid bg-warning text-white">
+        <div class="container">
+          <h1 class="display-4">Select your units to see what traits you get!</h1>
+          <p class="lead">Remember most games end with 8 units on the board to a max of 9</p>
+        </div>
+      </div>
 
     <div class="row container-fluid">
         <div class="col-md-2">
