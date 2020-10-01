@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TFT API - Summoner</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body class="container-fluid bg-dark justify-content-md-center">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-info">
+    <a class="navbar-brand" href="index.html">TFT Assist</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+            <a class="nav-link" href="meta.html">Meta<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="summoner.html">Summoner</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="items.html">Items</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="teamBuilder.html">Team Builder</a>
+        </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search Summoners">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+    <!-- creates a nav to all pages and a search bar to look for a specific summoner -->
+</nav>
+    <div class="jumbotron jumbotron-fluid bg-danger text-white">
+      <div class="container">
+        <h1 class="display-4">Take a look at other players!</h1>
+        <p class="lead">Below is the 10 most recent games for that summoner</p>
+      </div>
+    </div>
+    <div class="card text-center bg-secondary">
+      <!-- creates another search bar to look for your summoner stats on the page -->
+            <div class="card-header">
+              Search for your match history
+            </div>
+            <div class="card-body">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search Summoners">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </div>
+    </div>
+    <div class="card bg-transparent">
+      <!-- used to just create space on page -->
+            <div class="card-body"></div>
+    </div>
+    <div class="row justify-content-md-center">
+      <!-- creates a table that will be updated with the summoners match history up to the last 10 matches
+           this is just placeholder -->
+        <div>
+            <table class="table table-dark table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Placement</th>
+                    <th scope="col">Rank</th>
+                    <th scope="col">Roster</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td class="px-lg-5">5th</td>
+                    <td class="px-lg-5">Unrated</td>
+                    <td class="px-lg-5">Elderwood Mages</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td class="px-lg-5">8th</td>
+                    <td class="px-lg-5">Unrated</td>
+                    <td class="px-lg-5">Cultist Mages</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td class="px-lg-5">1st</td>
+                    <td class="px-lg-5">Unrated</td>
+                    <td class="px-lg-5">Cultist Assassins</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+</html>
