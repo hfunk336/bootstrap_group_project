@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- HUNTER FUNK -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TFTAssist - Home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body class="container-fluid justify-content-md-center bg-dark">
+    <!-- sets the background color to dark and justifies all content in the center -->
+
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-info">
         <a class="navbar-brand" href="index.html">TFT Assist</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,20 +40,22 @@
         <!-- creates a nav to all pages and a search bar to look for a specific summoner -->
     </nav>
 
-    <!-- <div class="jumbotron text-center bg-primary">
-        <h1 class="display-3">Welcome to TFT Assist</h1>
-        <p class="lead">Teambuild, play around meta, and find which items work best for your team comp</p>
-    </div> -->
-    <div class="card bg-dark text-white container-fluid" style="height: 350px; overflow: hidden; margin:0px 0px 30px 0px;">
-        <img src="TFT.S3_GALAXIES.ARTICLE-2.jpg" class="card-img mx-auto" alt="..." style="opacity:50%">
+
+    <div class="card bg-dark text-white container-fluid mb-3 overflow-hidden" style="height: 350px;">
+        <img src="indexBanner.jpg" class="card-img mx-auto" alt="banner" style="opacity:50%">
+        <!-- makes the card background an image -->
         <div class="card-img-overlay text-center">
+            <!-- overlays text over the image -->
           <h5 class="card-title display-3">Welcome to TFT Assist</h5>
           <p class="card-text">Teambuild, play around meta, and find which items work best for your team comp</p>
         </div>
     </div>
 
+    <!-- JUMBOTRONS LEADING TO DIFFERENT PAGES -->
+    <!-- META -->
     <div class="row container-fluid">
         <div class="jumbotron bg-info col-lg-7 text-white">
+            <!-- creates a large display that spans 7 columns -->
             <h1 class="display-5">Discover the Meta</h1>
             <p class="lead">Stay up to date on what's finding other players success for each recent patch of TFT</p>
             <hr class="my-4">
@@ -57,25 +63,33 @@
             <a class="btn btn-primary btn-lg" href="meta.html" role="button">Go to meta</a>
         </div>
         <div class="col-lg-5 mx-auto d-block">
+            <!-- centered image that spans 5 columns -->
             <img class="img-fluid" src="set4.png">
         </div>
     </div>
 
+    <!-- SUMMONER -->
     <div class="row container-fluid justify-content-md-right">
         <div class="col-lg-5 mx-auto d-block">
+            <!-- centered image that spans 5 columns -->
             <img class="img-fluid "src="pyke.jpg">
         </div>
         <div class="col-lg-7 jumbotron bg-danger text-right text-white">
+            <!-- creates a large display that spans 7 columns -->
             <h1 class="display-5">Wanna see how you've done?</h1>
+            <!-- display changes the size of the text -->
             <p class="lead">Look up your summoner name to see your stats</p>
             <hr class="my-4">
             <p>Show off how well you've played</p>
             <a class="btn btn-primary btn-lg" href="summoner.html" role="button">Go to Summoners</a>
+            <!-- btn makes a button -->
         </div>
     </div>
 
+    <!-- ITEMS -->
     <div class="row container-fluid">
         <div class="jumbotron bg-success col-lg-7 text-white">
+            <!-- creates a large display that spans 7 columns -->
             <h1 class="display-5">Buff up your Units</h1>
             <p class="lead">Need to know what items do what or how build into another?</p>
             <hr class="my-4">
@@ -83,15 +97,19 @@
             <a class="btn btn-primary btn-lg" href="items.html" role="button">Go to items</a>
         </div>
         <div class="col-lg-5 mx-auto d-block">
+            <!-- centered image that spans 5 columns -->
             <img class="img-fluid" src="items.jpg">
         </div>
     </div>
 
+    <!-- TEAMBUILDER -->
     <div class="row container-fluid justify-content-md-right">
         <div class="col-lg-5 mx-auto d-block">
+            <!-- centered image that spans 5 columns -->
             <img class="img-fluid "src="lux.png">
         </div>
         <div class="col-lg-7 jumbotron bg-warning text-right text-white">
+            <!-- creates a large display that spans 7 columns -->
             <h1 class="display-5">Strategize ahead of time</h1>
             <p class="lead">Wanna prepare for an upcoming game?</p>
             <hr class="my-4">
@@ -100,6 +118,7 @@
         </div>
     </div>
 
+    <!-- BOOTSTRAP FOR JAVASCRIPT -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
