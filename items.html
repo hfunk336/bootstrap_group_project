@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>TFT - Items</title>
     <style>img{width: 50px; border: 1px solid white;};</style>
+    <script src="xhr2.js"></script>
 </head>
 <body class="container-fluid justify-content-md-center bg-dark">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-info">
@@ -60,17 +61,17 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><img src="items/BFSword.png" alt=""></td>
-                    <td><img src="items/ChainVest.png" alt=""></td>
-                    <td><img src="items/GiantsBelt.png" alt=""></td>
-                    <td><img src="items/NeedlesslyLargeRod.png" alt=""></td>
-                    <td><img src="items/NegatronCloak.png" alt=""></td>
+                    <td><img id="item" src="items/BFSword.png" alt="BF Sword"></td>
+                    <td><img id="item" src="items/ChainVest.png" alt="Chain Vest"></td>
+                    <td><img id="item" src="items/GiantsBelt.png" alt="Giants Belt"></td>
+                    <td><img id="item" src="items/NeedlesslyLargeRod.png" alt="Needlessly Large Rod"></td>
+                    <td><img id="item" src="items/NegatronCloak.png" alt="Negatron Cloak"></td>
                   </tr>
                   <tr>
-                    <td><img src="items/RecurveBow.png" alt=""></td>
-                    <td><img src="items/SparringGloves.png" alt=""></td>
-                    <td><img src="items/Spatula.png" alt=""></td>
-                    <td><img src="items/TearoftheGoddess.png" alt=""></td>
+                    <td><img id="item" src="items/RecurveBow.png" alt="Recurve Bow"></td>
+                    <td><img id="item" src="items/SparringGloves.png" alt="Sparring Gloves"></td>
+                    <td><img id="item" src="items/Spatula.png" alt="Spatula."></td>
+                    <td><img id="item" src="items/TearoftheGoddess.png" alt="Tear of the Goddess"></td>
                   </tr>
                 </tbody>
               </table>
@@ -89,66 +90,66 @@
               </thead>
               <tbody>
                 <tr>
-                  <td><img src="items/Bloodthirster.png" alt="Bloodthirster"></td>
-                  <td><img src="items/BlueBuff.png" alt="Blue Buff"></td>
-                  <td><img src="items/BrambleVest.png" alt="Bramble Vest"></td>
-                  <td><img src="items/ChaliceofPower.png" alt="Chalice of Power"></td>
-                  <td><img src="items/Deathblade.png" alt="Deathblade"></td>
+                  <td><img id="item" src="items/Bloodthirster.png" alt="Bloodthirster"></td>
+                  <td><img id="item" src="items/BlueBuff.png" alt="Blue Buff"></td>
+                  <td><img id="item" src="items/BrambleVest.png" alt="Bramble Vest"></td>
+                  <td><img id="item" src="items/ChaliceofPower.png" alt="Chalice of Power"></td>
+                  <td><img id="item" src="items/Deathblade.png" alt="Deathblade"></td>
                 </tr>
                 <tr>
-                  <td><img src="items/DragonsClaw.png" alt="Dragons Claw"></td>
-                  <td><img src="items/DuelistsZeal.png" alt="Duelists Zeal"></td>
-                  <td><img src="items/ElderwoodHeirloom.png" alt="Elderwood Heirloom"></td>
-                  <td><img src="items/FrozenHeart.png" alt="Frozen Heart"></td>
-                  <td><img src="items/GargoyleStoneplate.png" alt="Gargoyle Stoneplate"></td>
+                  <td><img id="item" src="items/DragonsClaw.png" alt="Dragons Claw"></td>
+                  <td><img id="item" src="items/DuelistsZeal.png" alt="Duelists Zeal"></td>
+                  <td><img id="item" src="items/ElderwoodHeirloom.png" alt="Elderwood Heirloom"></td>
+                  <td><img id="item" src="items/FrozenHeart.png" alt="Frozen Heart"></td>
+                  <td><img id="item" src="items/GargoyleStoneplate.png" alt="Gargoyle Stoneplate"></td>
                 </tr>
                 <tr>
-                  <td><img src="items/GiantSlayer.png" alt="Giant Slayer"></td>
-                  <td><img src="items/GuardianAngel.png" alt="Guardian Angel"></td>
-                  <td><img src="items/GuinsoosRageblade.png" alt="Guinsoos Rageblade"></td>
-                  <td><img src="items/HandofJustice.png" alt="Hand of Justice"></td>
-                  <td><img src="items/HextechGunblade.png" alt="Hextech Gunblade"></td>
+                  <td><img id="item" src="items/GiantSlayer.png" alt="Giant Slayer"></td>
+                  <td><img id="item" src="items/GuardianAngel.png" alt="Guardian Angel"></td>
+                  <td><img id="item" src="items/GuinsoosRageblade.png" alt="Guinsoos Rageblade"></td>
+                  <td><img id="item" src="items/HandofJustice.png" alt="Hand of Justice"></td>
+                  <td><img id="item" src="items/HextechGunblade.png" alt="Hextech Gunblade"></td>
                 </tr>
                 <tr>
-                  <td><img src="items/InfinityEdge.png" alt="Infinity Edge"></td>
-                  <td><img src="items/IonicSpark.png" alt="Ionic Spark"></td>
-                  <td><img src="items/JeweledGauntlet.png" alt="Jeweled Gauntlet"></td>
-                  <td><img src="items/LastWhisper.png" alt="Last Whisper"></td>
-                  <td><img src="items/LocketoftheIronSolari.png" alt="Locket of the Iron Solari"></td>
+                  <td><img id="item" src="items/InfinityEdge.png" alt="Infinity Edge"></td>
+                  <td><img id="item" src="items/IonicSpark.png" alt="Ionic Spark"></td>
+                  <td><img id="item" src="items/JeweledGauntlet.png" alt="Jeweled Gauntlet"></td>
+                  <td><img id="item" src="items/LastWhisper.png" alt="Last Whisper"></td>
+                  <td><img id="item" src="items/LocketoftheIronSolari.png" alt="Locket of the Iron Solari"></td>
                 </tr>
                 <tr>
-                  <td><img src="items/LudensEcho.png" alt="Ludens Echo"></td>
-                  <td><img src="items/MagesCap.png" alt="Mages Cap"></td>
-                  <td><img src="items/MantleofDusk.png" alt="Mantle of Dusk"></td>
-                  <td><img src="items/Morellonomicon.png" alt="Morellonomicon"></td>
-                  <td><img src="items/Quicksilver.png" alt="Quicksilver"></td>
+                  <td><img id="item" src="items/LudensEcho.png" alt="Ludens Echo"></td>
+                  <td><img id="item" src="items/MagesCap.png" alt="Mages Cap"></td>
+                  <td><img id="item" src="items/MantleofDusk.png" alt="Mantle of Dusk"></td>
+                  <td><img id="item" src="items/Morellonomicon.png" alt="Morellonomicon"></td>
+                  <td><img id="item" src="items/Quicksilver.png" alt="Quicksilver"></td>
                 </tr>
                 <tr>
-                  <td><img src="items/RabadonsDeathcap.png" alt="Rabadons Deathcap"></td>
-                  <td><img src="items/RapidFirecannon.png" alt="Rapid Firecannon"></td>
-                  <td><img src="items/Redemption.png" alt="Redemption"></td>
-                  <td><img src="items/RunaansHurricane.png" alt="Runaans Hurricane"></td>
-                  <td><img src="items/ShroudofStillness.png" alt="Shroud of Stillness"></td>
+                  <td><img id="item" src="items/RabadonsDeathcap.png" alt="Rabadons Deathcap"></td>
+                  <td><img id="item" src="items/RapidFirecannon.png" alt="Rapid Firecannon"></td>
+                  <td><img id="item" src="items/Redemption.png" alt="Redemption"></td>
+                  <td><img id="item" src="items/RunaansHurricane.png" alt="Runaans Hurricane"></td>
+                  <td><img id="item" src="items/ShroudofStillness.png" alt="Shroud of Stillness"></td>
                 </tr>
                 <tr>
-                  <td><img src="items/SpearofShojin.png" alt="Spear of Shojin"></td>
-                  <td><img src="items/StatikkShiv.png" alt="Statikk Shiv"></td>
-                  <td><img src="items/SunfireCape.png" alt="Sunfire Cape"></td>
-                  <td><img src="items/SwordoftheDivine.png" alt="Sword of the Divine"></td>
-                  <td><img src="items/ThiefsGloves.png" alt="Thiefs Gloves"></td>
+                  <td><img id="item" src="items/SpearofShojin.png" alt="Spear of Shojin"></td>
+                  <td><img id="item" src="items/StatikkShiv.png" alt="Statikk Shiv"></td>
+                  <td><img id="item" src="items/SunfireCape.png" alt="Sunfire Cape"></td>
+                  <td><img id="item" src="items/SwordoftheDivine.png" alt="Sword of the Divine"></td>
+                  <td><img id="item" src="items/ThiefsGloves.png" alt="Thiefs Gloves"></td>
                 </tr>
                 <tr>
-                  <td><img src="items/TitansResolve.png" alt="Titans Resolve"></td>
-                  <td><img src="items/TrapClaw.png" alt="Trap Claw"></td>
-                  <td><img src="items/VanguardsCuirass.png" alt="Vanguards Cuirass"></td>
-                  <td><img src="items/WarlordsBanner.png" alt="Warlords Banner"></td>
-                  <td><img src="items/WarmogsArmor.png" alt="Warmogs Armor"></td>
+                  <td><img id="item" src="items/TitansResolve.png" alt="Titans Resolve"></td>
+                  <td><img id="item" src="items/TrapClaw.png" alt="Trap Claw"></td>
+                  <td><img id="item" src="items/VanguardsCuirass.png" alt="Vanguards Cuirass"></td>
+                  <td><img id="item" src="items/WarlordsBanner.png" alt="Warlords Banner"></td>
+                  <td><img id="item" src="items/WarmogsArmor.png" alt="Warmogs Armor"></td>
                 </tr>
                 <tr>
-                  <td><img src="items/YoumuusGhostblade.png" alt="Youmuus Ghostblade"></td>
-                  <td><img src="items/ZekesHerald.png" alt="Zekes Herald"></td>
-                  <td><img src="items/Zephyr.png" alt="Zephyr"></td>
-                  <td><img src="items/ZzRotPortal.png" alt="Zz Rot Portal"></td>
+                  <td><img id="item" src="items/YoumuusGhostblade.png" alt="Youmuus Ghostblade"></td>
+                  <td><img id="item" src="items/ZekesHerald.png" alt="Zekes Herald"></td>
+                  <td><img id="item" src="items/Zephyr.png" alt="Zephyr"></td>
+                  <td><img id="item" src="items/ZzRotPortal.png" alt="Zz Rot Portal"></td>
                 </tr>
               </tbody>
             </table>
@@ -167,20 +168,20 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <th>Item</th>
-                      <td colspan="3">Item Description</td>
+                      <th id="i1">Item</th>
+                      <td colspan="3" id="d1">Item Description</td>
                     </tr>
                     <tr>
-                        <th>Item</th>
-                        <td colspan="3">Item Description</td>
+                      <th id="i2">Item</th>
+                      <td colspan="3" id="d2">Item Description</td>
                     </tr>
                     <tr>
-                      <th>Item</th>
-                      <td colspan="3">Item Description</td>
+                      <th id="i3">Item</th>
+                      <td colspan="3" id="d3">Item Description</td>
                     </tr>
                     <tr>
-                      <th>Item</th>
-                      <td colspan="3">Item Description</td>
+                      <th id="i4">Item</th>
+                      <td colspan="3" id="d4">Item Description</td>
                     </tr>
                   </tbody>
                 </table>
