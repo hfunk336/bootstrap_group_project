@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TFTAssist - Home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="xhr.js" async></script>
+    <script src="xhr_index.js" async></script>
 </head>
 <body class="container-fluid justify-content-md-center bg-dark">
     <!-- sets the background color to dark and justifies all content in the center -->
@@ -60,7 +60,7 @@
             <h1 class="display-5">Discover the Meta</h1>
             <p class="lead">Stay up to date on what's finding other players success for each recent patch of TFT</p>
             <hr class="my-4">
-            <p>Most recent update: <b>Patch 10.19</b> <i>Set 4 - Fates</i></p>
+            <p>Most recent update: <b id="randMon">Patch 10.19</b> <i id="formMon">Set 4 - Fates</i></p>
             <a class="btn btn-primary btn-lg" href="meta.html" role="button">Go to meta</a>
         </div>
         <div class="col-lg-5 mx-auto d-block">
@@ -79,9 +79,9 @@
             <!-- creates a large display that spans 7 columns -->
             <h1 class="display-5">Wanna see how you've done?</h1>
             <!-- display changes the size of the text -->
-            <p class="lead">Look up your summoner name to see your stats</p>
+            <p id="compMon" class="lead">Look up your summoner name to see your stats</p>
             <hr class="my-4">
-            <p>Show off how well you've played</p>
+            <p id="winnerMon">Show off how well you've played</p>
             <a class="btn btn-primary btn-lg" href="summoner.html" role="button">Go to Summoners</a>
             <!-- btn makes a button -->
         </div>
