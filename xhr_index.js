@@ -8,7 +8,7 @@ xhr.addEventListener("readystatechange", function () {
 	if (this.readyState === this.DONE) {
         // console.log(this.responseText);
         const info = JSON.parse(this.responseText);
-        // console.log(info);
+        console.log(info);
     
         var randMon = info[getRandInt(1163)];
         var battleMon1 = info[getRandInt(1163)];
@@ -45,22 +45,3 @@ xhr.send(data);
 function getRandInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
 }
-
-//////// ANOTHER REQUEST ////////
-var data2 = null;
-
-var xhr2 = new XMLHttpRequest();
-xhr2.withCredentials = true;
-
-xhr2.addEventListener("readystatechange", function () {
-	if (this.readyState === this.DONE) {
-        console.log(this.responseText);
-        const info = JSON.parse(this.responseText);
-	}
-});
-
-xhr2.open("GET", "https://pokemon-go1.p.rapidapi.com/shiny_pokemon.json");
-xhr2.setRequestHeader("x-rapidapi-host", "pokemon-go1.p.rapidapi.com");
-xhr2.setRequestHeader("x-rapidapi-key", "6e92b71d8emsha940bdb9ac1852ap13256fjsnf23466aa721f");
-
-xhr2.send(data2);

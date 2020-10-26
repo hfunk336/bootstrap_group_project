@@ -31,4 +31,3 @@ xhr.setRequestHeader("x-rapidapi-host", "pokemon-go1.p.rapidapi.com");
 xhr.setRequestHeader("x-rapidapi-key", "6e92b71d8emsha940bdb9ac1852ap13256fjsnf23466aa721f");
 
 xhr.send(data);
-
