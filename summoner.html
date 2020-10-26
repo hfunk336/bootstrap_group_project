@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TFT API - Summoner</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-</head>
+    <script src="xhr.js" async></script>
+ </head>
 
 <body class="container-fluid bg-dark justify-content-md-center">
   <!-- NAVBAR (same as other pages) -->
@@ -55,8 +56,8 @@
               Search for your match history
             </div>
             <div class="card-body">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search Summoners">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <input id="search" class="form-control mr-sm-2" type="text" placeholder="Search Summoners (enter number 0-1149)">
+                <button id="searchBtn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </div>
     </div>
 
@@ -68,71 +69,71 @@
                 <thead>
                   <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Placement</th>
-                    <th scope="col">Rank</th>
-                    <th scope="col">Roster</th>
+                    <th scope="col">Placement (pokemon)</th>
+                    <th scope="col">Rank (base atk)</th>
+                    <th scope="col">Roster (form)</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <th scope="row">1</th>
-                    <td class="px-lg-5">5th</td>
-                    <td class="px-lg-5">Unrated</td>
-                    <td class="px-lg-5">Elderwood Mages</td>
+                    <td class="px-lg-5 placement">5th</td>
+                    <td class="px-lg-5 rank">Unrated</td>
+                    <td class="px-lg-5 roster">Elderwood Mages</td>
                   </tr>
                   <tr>
                     <th scope="row">2</th>
-                    <td class="px-lg-5">8th</td>
-                    <td class="px-lg-5">Unrated</td>
-                    <td class="px-lg-5">Cultist Mages</td>
+                    <td class="px-lg-5 placement">8th</td>
+                    <td class="px-lg-5 rank">Unrated</td>
+                    <td class="px-lg-5 roster">Cultist Mages</td>
                   </tr>
                   <tr>
                     <th scope="row">3</th>
-                    <td class="px-lg-5">1st</td>
-                    <td class="px-lg-5">Unrated</td>
-                    <td class="px-lg-5">Cultist Assassins</td>
+                    <td class="px-lg-5 placement">1st</td>
+                    <td class="px-lg-5 rank">Unrated</td>
+                    <td class="px-lg-5 roster">Cultist Assassins</td>
                   </tr>
                   <tr>
                     <th scope="row">4</th>
-                    <td class="px-lg-5">1st</td>
-                    <td class="px-lg-5">Unrated</td>
-                    <td class="px-lg-5">Cultist Assassins</td>
+                    <td class="px-lg-5 placement">1st</td>
+                    <td class="px-lg-5 rank">Unrated</td>
+                    <td class="px-lg-5 roster">Cultist Assassins</td>
                   </tr>
                   <tr>
                     <th scope="row">5</th>
-                    <td class="px-lg-5">1st</td>
-                    <td class="px-lg-5">Unrated</td>
-                    <td class="px-lg-5">Cultist Assassins</td>
+                    <td class="px-lg-5 placement">1st</td>
+                    <td class="px-lg-5 rank">Unrated</td>
+                    <td class="px-lg-5 roster">Cultist Assassins</td>
                   </tr>
                   <tr>
                     <th scope="row">6</th>
-                    <td class="px-lg-5">1st</td>
-                    <td class="px-lg-5">Unrated</td>
-                    <td class="px-lg-5">Cultist Assassins</td>
+                    <td class="px-lg-5 placement">1st</td>
+                    <td class="px-lg-5 rank">Unrated</td>
+                    <td class="px-lg-5 roster">Cultist Assassins</td>
                   </tr>
                   <tr>
                     <th scope="row">7</th>
-                    <td class="px-lg-5">1st</td>
-                    <td class="px-lg-5">Unrated</td>
-                    <td class="px-lg-5">Cultist Assassins</td>
+                    <td class="px-lg-5 placement">1st</td>
+                    <td class="px-lg-5 rank">Unrated</td>
+                    <td class="px-lg-5 roster">Cultist Assassins</td>
                   </tr>
                   <tr>
                     <th scope="row">8</th>
-                    <td class="px-lg-5">1st</td>
-                    <td class="px-lg-5">Unrated</td>
-                    <td class="px-lg-5">Cultist Assassins</td>
+                    <td class="px-lg-5 placement">1st</td>
+                    <td class="px-lg-5 rank">Unrated</td>
+                    <td class="px-lg-5 roster">Cultist Assassins</td>
                   </tr>
                   <tr>
                     <th scope="row">9</th>
-                    <td class="px-lg-5">1st</td>
-                    <td class="px-lg-5">Unrated</td>
-                    <td class="px-lg-5">Cultist Assassins</td>
+                    <td class="px-lg-5 placement">1st</td>
+                    <td class="px-lg-5 rank">Unrated</td>
+                    <td class="px-lg-5 roster">Cultist Assassins</td>
                   </tr>
                   <tr>
                     <th scope="row">10</th>
-                    <td class="px-lg-5">1st</td>
-                    <td class="px-lg-5">Unrated</td>
-                    <td class="px-lg-5">Cultist Assassins</td>
+                    <td class="px-lg-5 placement">1st</td>
+                    <td class="px-lg-5 rank">Unrated</td>
+                    <td class="px-lg-5 roster">Cultist Assassins</td>
                   </tr>
 
                 </tbody>
