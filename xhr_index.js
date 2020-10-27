@@ -1,3 +1,5 @@
+// Hunter Funk //
+
 ///// API Request /////
 const data = null;
 
